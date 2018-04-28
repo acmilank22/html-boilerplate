@@ -1,7 +1,14 @@
-async function sleep(duration) {
-    return duration;
+function wait(duration) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('resolved');
+        }, duration);
+    });
 }
 
-const result = sleep(1000);
+async function sleep() {
+    const result = await wait(1000);
+    console.log(result);
+}
 
-console.log(sleep);
+sleep();
