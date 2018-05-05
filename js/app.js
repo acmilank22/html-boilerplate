@@ -1,14 +1,14 @@
-function wait(duration) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve('resolved');
-        }, duration);
-    });
+async function request(url) {
+    try {
+        const request = await fetch(url, { mode: 'no-cors' });
+        console.log(request);
+        return request.text();
+    } catch (error) {
+        throw new Error(error);
+    }
 }
 
-async function sleep() {
-    const result = await wait(1000);
-    console.log(result);
-}
-
-sleep();
+(async () => {
+    const data = await request('http://127.0.0.1:8080/');
+    console.log(data);
+})();
