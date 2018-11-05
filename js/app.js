@@ -23,7 +23,13 @@ const o = {
   ]
 };
 
-const s = qs.stringify(o);
+// const s = qs.stringify(o);
 
-console.log(s);
-console.log(qs.parse(s));
+// console.log(s);
+// console.log(qs.parse(s));
+
+define(['js/libs/qs@latest.js'], function(qs) {
+  return {
+    s: qs.stringify(o)
+  };
+});
