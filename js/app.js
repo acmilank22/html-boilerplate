@@ -28,7 +28,7 @@ const o = {
 // console.log(s);
 // console.log(qs.parse(s));
 
-define(['js/libs/qs@latest.js'], function(qs) {
+define(['js/libs/qs@latest.js', 'js/libs/jquery.min'], function(qs, $) {
   return {
     s: qs.stringify(o)
   };

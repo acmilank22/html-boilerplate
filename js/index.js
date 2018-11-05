@@ -4,4 +4,5 @@ requirejs.config({
 
 requirejs(['app'], function(app) {
   console.log(app);
+  app.s;
 });
