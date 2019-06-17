@@ -1,5 +1,5 @@
 {
-  "name": "index",
+  "name": "html-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://acmilank22@github.com/acmilank22/index.git"
+    "url": "git+https://acmilank22@github.com/acmilank22/html-boilerplate.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acmilank22/index/issues"
+    "url": "https://github.com/acmilank22/html-boilerplate/issues"
   },
-  "homepage": "https://github.com/acmilank22/index#readme"
+  "homepage": "https://github.com/acmilank22/html-boilerplate#readme"
 }
