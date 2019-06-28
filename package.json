@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/acmilank22/html-boilerplate/issues"
   },
-  "homepage": "https://github.com/acmilank22/html-boilerplate#readme"
+  "homepage": "https://github.com/acmilank22/html-boilerplate#readme",
+  "devDependencies": {}
 }
