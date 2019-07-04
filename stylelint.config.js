@@ -1,5 +1,5 @@
 const config = {
-  extends: 'stylelint-config-recommended',
+  extends: 'stylelint-config-standard',
   rules: {
     'color-hex-case': [
       'lower',
