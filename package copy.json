@@ -30,5 +30,24 @@
     "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{html,js,ts}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "git add"
+    ]
   }
 }
