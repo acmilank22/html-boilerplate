@@ -38,7 +38,7 @@ Promise.all(promises).then(res => {
   res.forEach(item => {
     list = [...list, ...item];
   });
-  const array = list.sort((a, b) => {
+  const data = list.sort((a, b) => {
     const scoreA = a.score.final;
     const scoreB = b.score.final;
     if (scoreA < scoreB) {
@@ -49,5 +49,12 @@ Promise.all(promises).then(res => {
     }
     return 0;
   });
-  console.log(array);
+  const array = data.map(item => {
+    const { package: packageItem, score } = item;
+    const { name, links } = packageItem;
+    const { npm, repository } = links;
+    const { final } = score;
+    return { name, npm, repository, score: (final * 100).toFixed(0) };
+  });
+  console.log(JSON.stringify(array));
 });
