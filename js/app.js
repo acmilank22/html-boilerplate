@@ -1,29 +1,53 @@
-const limit = 20;
-let offset = 0;
-let promises = [];
+const alphabet = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z'
+];
 
-function getData({ offset }) {
-  return fetch(
-    `https://www.zhihu.com/api/v4/answers/97093844/comments?limit=${limit}&offset=${offset}`
-  )
-    .then(res => res.json())
-    .then(({ data }) => data);
-}
+const promises = alphabet.map(letter =>
+  fetch(
+    `https://api.npms.io/v2/search/suggestions?q=${letter}&size=${100}`
+  ).then(res => res.json())
+);
 
-while (offset < 1527) {
-  promises.push(getData({ offset }));
-  offset += limit;
-}
-
-Promise.all(promises).then(dataList => {
+Promise.all(promises).then(res => {
   let list = [];
-  for (const data of dataList) {
-    for (const item of data) {
-      const { content, author } = item;
-      const { member } = author;
-      const { name } = member;
-      list.push({ name, content });
+  res.forEach(item => {
+    list = [...list, ...item];
+  });
+  const array = list.sort((a, b) => {
+    const scoreA = a.score.final;
+    const scoreB = b.score.final;
+    if (scoreA < scoreB) {
+      return 1;
     }
-  }
-  console.log(JSON.stringify(list));
+    if (scoreA > scoreB) {
+      return -1;
+    }
+    return 0;
+  });
+  console.log(array);
 });
