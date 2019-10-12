@@ -1,3 +1,4 @@
+/*
 const alphabet = [
   'a',
   'b',
@@ -82,3 +83,4 @@ Promise.all(promises).then(res => {
     </table>
   `;
 });
+*/
