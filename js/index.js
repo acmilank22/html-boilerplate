@@ -68,7 +68,7 @@ Promise.all(promises).then(res => {
         </tr>
       `
   );
-  document.getElementById('wrapper').innerHTML = `
+  document.getElementById('root').innerHTML = `
     <table>
       <thead>
         <tr>
