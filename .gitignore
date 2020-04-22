@@ -14,6 +14,7 @@
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
@@ -147,7 +148,14 @@ fabric.properties
 # *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+.idea/**/sonarlint/
+
+# SonarQube Plugin
+.idea/**/sonarIssues.xml
+
+# Markdown Navigator plugin
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator/
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -205,6 +213,7 @@ modules.xml
 *.ipr
 
 # Sonarlint plugin
+.idea/sonarlint
 
 ### macOS ###
 # General
@@ -312,6 +321,17 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# rollup.js default build output
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+
 # vuepress build output
 .vuepress/dist
 
@@ -323,6 +343,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Temporary folders
+tmp/
+temp/
 
 ### OSX ###
 # General
@@ -340,28 +364,6 @@ typings/
 
 .expo
 __generated__
-
-### ReactNative.Linux Stack ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### ReactNative.Buck Stack ###
-buck-out/
-.buckconfig.local
-.buckd/
-.buckversion
-.fakebuckversion
 
 ### ReactNative.Xcode Stack ###
 # Xcode
@@ -393,21 +395,6 @@ DerivedData/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
-
-### ReactNative.Gradle Stack ###
-.gradle
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
 
 ### ReactNative.Android Stack ###
 # Built application files
@@ -489,6 +476,43 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
+### ReactNative.Linux Stack ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### ReactNative.Gradle Stack ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### ReactNative.Buck Stack ###
+buck-out/
+.buckconfig.local
+.buckd/
+.buckversion
+.fakebuckversion
+
 ### ReactNative.Node Stack ###
 # Logs
 
@@ -534,6 +558,15 @@ lint/tmp/
 
 # nuxt.js build output
 
+# rollup.js default build output
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+
 # vuepress build output
 
 # Serverless directories
@@ -541,6 +574,8 @@ lint/tmp/
 # FuseBox cache
 
 # DynamoDB Local files
+
+# Temporary folders
 
 ### ReactNative.macOS Stack ###
 # General
@@ -598,6 +633,7 @@ $RECYCLE.BIN/
 build/
 dist/
 miniprogram_npm/
+!public/
 !bin/
 !.env
 !.env.test
