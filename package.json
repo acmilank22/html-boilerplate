@@ -20,11 +20,6 @@
     "stylelint": "npx stylelint --fix \"**/*.{css,scss,js,jsx,vue}\"",
     "lint": "npm run prettier && npm run eslint && npm run stylelint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
