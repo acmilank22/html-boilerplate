@@ -24,8 +24,11 @@ function throttle(func, delay) {
 
 console.log(debounce, throttle);
 
-const fn = (a) => {
-  return a;
+const fn = (o) => o;
+
+const o = {
+  a: 1,
+  b: 2,
 };
 
-fn();
+fn(o);
