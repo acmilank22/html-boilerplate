@@ -14,7 +14,6 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "npx prettier \"**/*.{js,jsx,ts,tsx,html,vue,css,scss,json,md}\"",
     "eslint": "npx eslint --fix \"**/*.{js,jsx,html,vue}\"",
     "stylelint": "npx stylelint --fix \"**/*.{css,scss,js,jsx,vue}\"",
