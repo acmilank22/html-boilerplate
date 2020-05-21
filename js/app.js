@@ -24,11 +24,15 @@ function throttle(func, delay) {
 
 console.log(debounce, throttle);
 
-const fn = (o) => o;
+/* function difference(array1, array2) {
+  const array = [...array1, ...array2];
+  return array.filter(
+    (item) => !(array1.includes(item) && array2.includes(item))
+  );
+}
 
-const o = {
-  a: 1,
-  b: 2,
-};
+function generateRandom({ min, max } = {}) {
+  return Math.random() * (max - min + 1) + min;
+}
 
-fn(o);
+generateRandom(); */
