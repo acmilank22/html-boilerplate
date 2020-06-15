@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "",
-  "main": "index.js",
+  "main": "index.js1",
   "scripts": {
     "prettier": "npx prettier \"**/*.{js,jsx,ts,tsx,html,vue,css,scss,json,md}\"",
     "eslint": "npx eslint --fix \"**/*.{js,jsx,html,vue}\"",
