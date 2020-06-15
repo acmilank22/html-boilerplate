@@ -7,12 +7,14 @@
         "eslint",
         "stylelint",
         "htmlhint",
+        "commitlint",
         "lint-staged",
         "gitignore",
         "gitattributes",
         "license"
       ],
-      "eslint": "es6"
+      "eslint": "es6",
+      "stylelint": []
     }
   }
 }
