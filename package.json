@@ -1,24 +1,24 @@
 {
-  "name": "html-boilerplate",
+  "name": "playground",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/acmilank22/html-boilerplate#readme",
+  "homepage": "https://github.com/acmilank22/playground#readme",
   "bugs": {
-    "url": "https://github.com/acmilank22/html-boilerplate/issues"
+    "url": "https://github.com/acmilank22/playground/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://acmilank22@github.com/acmilank22/html-boilerplate.git"
+    "url": "git+https://github.com/acmilank22/playground.git"
   },
   "license": "MIT",
   "author": "",
   "main": "index.js1",
   "scripts": {
-    "prettier": "npx prettier \"**/*.{js,jsx,ts,tsx,html,vue,css,scss,json,md}\"",
+    "commit": "git-cz",
     "eslint": "npx eslint --fix \"**/*.{js,jsx,html,vue}\"",
-    "stylelint": "npx stylelint --fix \"**/*.{css,scss,js,jsx,vue}\"",
     "lint": "npm run prettier && npm run eslint && npm run stylelint",
-    "commit": "git-cz"
+    "prettier": "npx prettier \"**/*.{js,jsx,ts,tsx,html,vue,css,scss,json,md}\"",
+    "stylelint": "npx stylelint --fix \"**/*.{css,scss,js,jsx,vue}\""
   },
   "husky": {
     "hooks": {
