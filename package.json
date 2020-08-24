@@ -16,8 +16,8 @@
   "scripts": {
     "commit": "git-cz",
     "eslint": "npx eslint --fix \"**/*.{js,jsx,html,vue}\"",
-    "lint": "npm run prettier && npm run eslint && npm run stylelint",
-    "prettier": "npx prettier \"**/*.{js,jsx,ts,tsx,html,vue,css,scss,json,md}\"",
+    "lint": "npm run eslint && npm run prettier && npm run stylelint",
+    "prettier": "npx prettier \"**/*.{js,ts,jsx,tsx,json,html,vue,css,less,scss,md,yaml}\"",
     "stylelint": "npx stylelint --fix \"**/*.{css,scss,js,jsx,vue}\""
   },
   "husky": {
@@ -32,15 +32,15 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
     "babel-eslint": "^10.1.0",
-    "commitizen": "^4.1.2",
+    "commitizen": "^4.1.5",
     "cz-conventional-changelog": "^3.2.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-html": "^6.0.3",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
