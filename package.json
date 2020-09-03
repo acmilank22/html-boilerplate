@@ -2,13 +2,13 @@
   "name": "playground",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/acmilank22/playground#readme",
+  "homepage": "https://github.com/donniean/playground#readme",
   "bugs": {
-    "url": "https://github.com/acmilank22/playground/issues"
+    "url": "https://github.com/donniean/playground/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acmilank22/playground.git"
+    "url": "git+https://github.com/donniean/playground.git"
   },
   "license": "MIT",
   "author": "",
