@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "appcan",
+    "browserslistrc",
+    "chunkhash",
+    "commitlint",
+    "configsrc",
+    "devtool",
+    "donniean",
+    "editorconfig",
+    "eslintignore",
+    "favicons",
+    "gitattributes",
+    "htmlhint",
+    "htmlhintrc",
+    "huskyrc",
+    "lintstagedrc",
+    "miniprogram",
+    "prettierignore",
+    "sourcemap",
+    "stylelint",
+    "todos",
+    "webpackbar",
+    "wechat"
+  ],
+  "ignorePaths": [
+    "**/dist/**",
+    "**/build/**",
+    "**/libs/**",
+    "**/*.min.*",
+    "**/package.json",
+    "**/package-lock.json",
+    "**/.gitattributes",
+    "**/.gitignore"
+  ]
+}
