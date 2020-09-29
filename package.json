@@ -11,11 +11,11 @@
     "url": "git+https://github.com/donniean/playground.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "Donnie An",
   "main": "index.js",
   "scripts": {
     "prettier": "npx prettier \"**/*.{js,css,html,json,md}\"",
-    "eslint": "npx eslint --fix \"**/*.{js,html\"",
+    "eslint": "npx eslint --fix \"**/*.{js,html}\"",
     "stylelint": "npx stylelint --fix \"**/*.{js,html}\"",
     "lint": "npm run prettier && npm run eslint && npm run stylelint",
     "cspell": "cspell \"**/*\"",
