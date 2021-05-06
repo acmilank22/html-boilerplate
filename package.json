@@ -11,16 +11,16 @@
     "url": "git+https://github.com/donniean/playground.git"
   },
   "license": "MIT",
-  "author": "Donnie An1",
+  "author": "Donnie An",
   "main": "index.js",
   "scripts": {
     "prettier": "npx prettier \"**/*.{js,css,html,json,md}\"",
     "eslint": "npx eslint --fix \"**/*.{js,html}\"",
     "stylelint": "npx stylelint --fix \"**/*.{js,html}\"",
     "cspell": "cspell \"**/*\"",
+    "commit": "git-cz",
     "prepare": "husky install",
-    "pre-commit": "lint-staged",
-    "commit": "git-cz"
+    "pre-commit": "lint-staged"
   },
   "config": {
     "commitizen": {
