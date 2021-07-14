@@ -14,6 +14,7 @@
   "author": "Donnie An",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon server/app",
     "prettier": "npx prettier \"**/*.{js,css,html,json,md}\"",
     "eslint": "npx eslint --fix \"**/*.{js,html}\"",
     "stylelint": "npx stylelint --fix \"**/*.{css}\"",
@@ -44,6 +45,7 @@
     "htmlhint": "^0.14.2",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.10",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
@@ -51,5 +53,11 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.2.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "winston": "^3.3.3"
   }
 }
