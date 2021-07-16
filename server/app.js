@@ -8,4 +8,6 @@ const staticPath = path.join(__dirname, '../src');
 
 app.use(express.static(staticPath));
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});

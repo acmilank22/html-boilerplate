@@ -47,6 +47,7 @@
     "**/.gitignore",
     "**/.htmlhintrc",
     "**/package.json",
-    "**/package-lock.json"
+    "**/package-lock.json",
+    "**/Dockerfile"
   ]
 }
